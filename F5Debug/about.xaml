@@ -1,0 +1,69 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="F5Debug.about"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModels="clr-namespace:F5Debug.ViewModels"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="Building and Debugging the Technology" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="about" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            
+            <StackPanel>
+                <TextBlock 
+                    Text="F5 Debug" 
+                    Margin="12,0,12,0" 
+                    FontSize="{StaticResource PhoneFontSizeLarge}" 
+                    FontFamily="{StaticResource PhoneFontFamilySemiBold}"/>
+                <TextBlock 
+                    Text="1.0.0.1" 
+                    Margin="12,0,12,0" 
+                    FontSize="{StaticResource PhoneFontSizeNormal}"/>
+            </StackPanel>
+            
+            <TextBlock 
+                Grid.Row="1" 
+                Text="Karthikeyan Anbarasan, Microsoft MVP (Most Valuable Professional) in ASP.NET/IIS Architecture. He is the Founder and Chief Editor of the www.f5debug.net website and has authored books on Windows Phone and Business Intelligence(SSIS). This application is for all the F5Debug lovers, this will keep you updated about the posts made by Karthikeyan Anbarasan. "
+                Margin="12,24,12,24" 
+                TextWrapping="Wrap" 
+                Foreground="{StaticResource PhoneSubtleBrush}" 
+                FontSize="{StaticResource PhoneFontSizeNormal}" />
+            <StackPanel Grid.Row="4" Margin="12,0,12,50" VerticalAlignment="Bottom">
+                <TextBlock 
+                    Text="Developed by Shubham Saxena" 
+                    Margin="0,12,0,0" 
+                    FontSize="{StaticResource PhoneFontSizeNormal}"/>
+                <TextBlock 
+                    Text="Content Rights Reserved by F5Debug.net" 
+                    FontSize="{StaticResource PhoneFontSizeNormal}"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+    
+</phone:PhoneApplicationPage>
